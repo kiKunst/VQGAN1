@@ -19,5 +19,13 @@
       <p>Idea by Annemarie Firnkes & Maritza Lapeira</p>
       <p1>Built by Marvin Voss</p1>
     </footer>
+    <script>
+      function printImage() {
+        var myImage = '{{generatedImage}}';
+        var myWindow = window.open("", "Image");
+        myWindow.document.write("<img src='"+myImage+"''>");
+        myWindow.print();
+      }
+    </script>
   </body>
 </html>
