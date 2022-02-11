@@ -12,14 +12,27 @@
       <h1>Send me Postcards from AI</h1>
     </header>
     <main>
-      <label id="label" for="textInput">On AI it is very...</label>
-      <input type="text" id="textInput" name="textInput">
-      <button id="button">generate postcard</button>
-      <div id="result"></div>
+      <img id="img" src=''>
     </main>
     <footer>
       <p>Idea by Annemarie Firnkes & Maritza Lapeira</p>
       <p1>Built by Marvin Voss</p1>
     </footer>
+    <script>
+    function heartbeat() {
+      fetch("/status").then(function(result) { 
+      return result.json();
+      }).then(function(result) {
+      if (result == "try later") {}
+        else if (result == "hurra") {
+        window.location.href="/image";
+        }
+      else {
+        document.getElementById("img").src = result;
+      }
+      })                     
+    }
+      setInterval(heartbeat, 2000);
+    </script>
   </body>
 </html>
