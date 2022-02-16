@@ -37,6 +37,13 @@ main {
   margin-bottom: 1em;
   padding-top: 2em;
   text-align: center;
+  position:absolute;
+  height: X px;
+  width: Y px;
+  left:50%;
+  top:50%;
+  margin-top:- X/2 px;
+  margin-left:- Y/2 px;
 }
 label {
   color: #FFF;
