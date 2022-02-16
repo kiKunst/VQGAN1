@@ -35,7 +35,9 @@ main {
   background-color: #000;
   border-radius: 12px;
   margin-bottom: 1em;
-  margin-top: 5em;
+  display: flex;
+  align-content: center;
+  justify-content: center;
   padding-top: 2em;
 }
 label {
@@ -59,7 +61,7 @@ button {
   transition: all 0.4s ease 0s;
   cursor: pointer;
   color: #FFF;
-  margin-bottom: 4em;
+  margin-left: 2px;
 }
 button:hover,
 button:focus {
