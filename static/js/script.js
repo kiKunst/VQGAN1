@@ -8,6 +8,6 @@ function returnText(){
   } else {
     input = "postcard";
     console.log(input);
-    window.location.href = "convert?text" + input;
+    window.location.href = "convert?text=" + input;
   }
 }
