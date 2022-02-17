@@ -36,6 +36,7 @@ main {
   border-radius: 12px;
   margin-bottom: 1em;
   padding-top: 2em;
+  text-align: center;
 }
 label {
   color: #FFF;
