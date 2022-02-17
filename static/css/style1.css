@@ -35,9 +35,6 @@ main {
   background-color: #000;
   border-radius: 12px;
   margin-bottom: 1em;
-  display: flex;
-  align-content: center;
-  justify-content: center;
   padding-top: 2em;
 }
 label {
